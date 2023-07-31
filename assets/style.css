@@ -1,0 +1,11 @@
+* {
+    font-family: Arial;
+}
+body , html {
+    width:100%;
+    height:95%;
+    overflow:hidden;
+}
+.footer{
+    bottom: 0;
+}
