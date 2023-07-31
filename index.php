@@ -7,16 +7,7 @@
     <title>Online Music Player</title>
     <!-- Use 24.css -->
     <link rel="stylesheet" href="https://blokchainology.com/CDN/min24.css">
-    <style>
-        body , html {
-            width:100%;
-            height:95%;
-            overflow:hidden;
-        }
-        .footer{
-            bottom: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="position-rel t-align-center">
     <h1 class=" dmagenta ">Music Player</h1>
@@ -29,15 +20,15 @@
             echo "<p class=' green'>Enjoy The Song :) </p>";  
         }elseif(!isset($_REQUEST['link'])){
             echo "<br><br>  ";    
-            echo "Plase Enter Music link -> Syntax: " . "https://blokchainlogy.com/inPlayer?link=MusicLink";   ;
+            echo '<script>alert("Plase Enter Music link -> Syntax: https://blokchainlogy.com/inPlayer?link=MusicLink")</script>';
         }else {
-            echo "Syntaxt Error -> Use this Syntax" . "https://blokchainlogy.com/inPlayer?link=MusicLink";
+            echo '<script>alert("Syntaxt Error -> Use this Syntax" . "https://blokchainlogy.com/inPlayer?link=MusicLink")</script>';
         }
     ?>
 
     <div class="footer position-ab w--100">
         <div class="d-flex j-evenly">
-            <p class="m-10">Powered BY Blokchainology</p>
+            <p class="m-10">Powered BY <a href="https://Blokchainology.com">Blokchainology</a></p>
             <h3 class="blue m-10">Zmat24</h3>
         </div>
     </div>
